@@ -260,7 +260,43 @@ display:none;
 }
 
 
+.download-app{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 0 40px;
+    
+}
 
+.app-content{
+    width:50%;
+
+}
+
+.app-content h2{
+    font-size:40px;
+    font-weight:600;
+}
+
+.app-content p{
+    font-size:18px;
+    line-height:1.8;
+    max-width:500px;
+    margin-bottom:20px;
+}
+
+
+.app-buttons{
+  display:flex;
+  gap:20px;
+  align-items:center;
+
+}
+
+.app-buttons img{
+    width:150px;
+    height:auto;
+}
 @media (max-width:900px){
     .product-container{
         grid-template-columns: repeat(2,1fr);
