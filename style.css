@@ -141,3 +141,23 @@ html,body{
     background-color:orange;
     transform:scale(1.1);
 }
+
+.product-container{
+    display:grid;
+    grid-template-columns: 300px 300px 300px;
+    gap:40px;
+}
+
+.product-card img{
+    width:250px;    
+}
+
+.product-card{
+    padding:20px;
+    border:1px solid black;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    
+}
