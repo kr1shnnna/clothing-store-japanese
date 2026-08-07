@@ -294,9 +294,15 @@ display:none;
 }
 
 .app-buttons img{
-    width:150px;
-    height:auto;
+   height:auto;
+   width:200px;
 }
+.app-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+
 @media (max-width:900px){
     .product-container{
         grid-template-columns: repeat(2,1fr);
