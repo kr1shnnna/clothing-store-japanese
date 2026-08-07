@@ -92,6 +92,7 @@ html,body{
     justify-content:space-between;
     gap:40px;  
     padding:0 60px; 
+    margin-top:20px;
 }
 
 
@@ -144,12 +145,16 @@ html,body{
 
 .product-container{
     display:grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap:40px;
+    padding:40px;
+  
 }
 
 .product-card img{
-    width:250px;    
+    width:100%;
+    height:300px;
+    object-fit:contain; 
 }
 
 .product-card{
@@ -159,5 +164,34 @@ html,body{
     display:flex;
     flex-direction:column;
     gap:20px;
+    background-color:tomato;
     
+}
+
+.product-card h3{
+    font-size:20px;
+    font-weight:500;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.product-card p{
+    margin-bottom:10px;
+}
+
+.product-card button{
+    padding:10px 20px;
+    border-radius:20px;
+    cursor:pointer;
+    border:none;
+    transition:transform 0.3s ease, background-color 0.3s ease;
+}
+
+.product-card button:hover{
+    background-color:orange;
+}
+
+.products h2{
+    text-align:center;
+margin-top:30px;
 }
