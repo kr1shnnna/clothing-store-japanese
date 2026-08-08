@@ -13,4 +13,5 @@ const mobileMenu = document.querySelector(".mobile-menu");
 
 hamburger.addEventListener("click", () => {
     mobileMenu.classList.toggle("active");
+    hamburger.classList.toggle("active");
 });
