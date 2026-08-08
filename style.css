@@ -21,7 +21,9 @@ html,body{
     justify-content:space-between;
     align-items:center;
     padding:0 40px; 
+    position:relative;
 }
+
 
 
 .logo img{
@@ -220,7 +222,7 @@ display:none;
 .hamburger span{
     width:20px;
     height:3px;
-    background-color:black;
+    background-color:white;
     border-radius:5px;
 }
 
@@ -368,6 +370,56 @@ display:none;
     margin-bottom:8px;
 }
 
+.mobile-menu{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    padding:20px;
+    background-color:#333;
+    z-index:1000;
+    align-items:center;
+
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(-15px);
+
+transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+
+
+}   
+
+.mobile-menu a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+}
+
+
+
+.mobile-menu button{
+    padding:8px 15px;
+    border-radius:20px;
+    cursor:pointer;
+    border:none;
+    background-color:tomato;
+}
+.mobile-menu.active{
+
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+
+} 
+
+
+
+
+
+
 @media (max-width:900px){
     .product-container{
         grid-template-columns: repeat(2,1fr);
@@ -395,7 +447,6 @@ display:none;
     gap: 30px;
     align-items: center;
     text-align: center;
-    padding:30px 20px;
 
 }
 
@@ -443,9 +494,28 @@ display:none;
     .footer-content{
         flex-direction:column;
         gap:30px;
+        align-items:center;
+        text-align:center;
+    }
+
+    .footer-brand{
+        text-align:center;
+    }
+
+    .footer-links{
+        align-items:center;
+
+    }
+
+    .footer-contact{
+        text-align:center;
     }
 }
 
+
+
+
+/* hamburger menu for mobile view */
 
 @media (max-width: 700px) {
 
@@ -457,5 +527,4 @@ display:none;
     .hamburger {
         display: flex;
     }
-
 }

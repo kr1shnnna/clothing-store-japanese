@@ -1,181 +1,239 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <a href="/" class="logo">
-        <img src="cloth-logo.jpg" alt="logo" />
-      </a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Product</a>
-        <a href="#">Contact Us</a>
-        <a href="#">About Us</a>
-      </div>
+  <title>Cloth Store</title>
 
-      <div class="auth">
-        <button>Login</button>
-        <button>Sign Up</button>
-      </div>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-      <!-- Hamburger -->
+<body>
 
-      <button class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </nav>
+  <!-- ================= NAVBAR ================= -->
 
-    <section class="hero">
-      <div class="left">
-        <img src="cloth-model.jpeg" alt="cloth-model" />
-      </div>
+  <nav class="navbar">
 
-      <div class="right">
-        <h1>Cloth Store</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptatum, quod, quia, voluptates quibusdam voluptatibus voluptatibus
-          quibusdam voluptatibus quibusdam voluptatibus voluptatibus quibusdam
-          voluptatibus.
-        </p>
-        <button>Shop Now</button>
-      </div>
-    </section>
-    <!-- Products Page-->
-    <section class="products">
-      <h2>Our Merchandise</h2>
-
-      <div class="product-container">
-        <div class="product-card">
-          <img src="cloth1.webp" alt="product-1" />
-          <h3>Beige Pants</h3>
-          <p>$9.99</p>
-          <button>Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="cloth1.webp" alt="product-1" />
-          <h3>Biege Pants</h3>
-          <p>$9.99</p>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="cloth1.webp" alt="product-1" />
-          <h3>Premium Oversized T-shirt</h3>
-          <p>$9.99</p>
-          <button>Add to Cart</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="reviews">
-      <h2>What Our Customers Say ?</h2>
-
-      <div class="review-container">
-
-        <div class="review-card">
-          <h3>⭐⭐⭐⭐⭐</h3>
-          <p>"Amazing quality and really comfortable clothes."</p>
-          <h4>Rahul</h4>
-        </div>
-        <div class="review-card">
-          <h3>⭐⭐⭐⭐⭐</h3>
-          <p>"Loved the design. Definitely ordering again!"</p>
-          <h4>Ananya</h4>
-        </div>
-        <div class="review-card">
-          <h3>⭐⭐⭐⭐⭐</h3>
-          <p>"Good quality and fast delivery. Highly recommended."</p>
-          <h4>Arun</h4>
-        </div>
-        <div class="review-card">
-          <h3>⭐⭐⭐⭐⭐</h3>
-          <p>"Good quality and fast delivery. Highly recommended."</p>
-          <h4>Arun</h4>
-        </div>
-        <div class="review-card">
-          <h3>⭐⭐⭐⭐⭐</h3>
-          <p>"Good quality and fast delivery. Highly recommended."</p>
-          <h4>Arun</h4>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- Download our app -->
-
-   <section class="download-app">
-
-      <div class="app-content">
-        <h2>Download Our App</h2>
-
-        <p>
-           Shop your favorite clothes anytime, anywhere.
-            Download our app for a better shopping experience.
-        </p>
-
-    <div class="app-buttons">
-
-      <a href="#" class="store-btn">
-        <img src="playstore.png" alt="playstore" />
-    </a>
-
-    <a href="#" class="store-btn">
-      <img src="appstore.png" alt="appstore" />
-    </a>
+    <div class="logo">
+      <img src="cloth-logo.jpg" alt="Cloth Store Logo">
     </div>
 
+    <!-- Desktop Navigation -->
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Contact Us</a>
+      <a href="#">About Us</a>
+    </div>
+
+    <!-- Desktop Auth -->
+    <div class="auth">
+      <button>Login</button>
+      <button>Sign Up</button>
+    </div>
+
+    <!-- Hamburger -->
+    <button class="hamburger" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Contact Us</a>
+      <a href="#">About Us</a>
+
+      <button>Login</button>
+      <button>Sign Up</button>
+    </div>
+
+  </nav>
+
+
+  <!-- ================= HERO ================= -->
+
+  <section class="hero">
+
+    <div class="left">
+      <img src="cloth-model.jpeg" alt="Clothing model">
+    </div>
+
+    <div class="right">
+      <h1>Cloth Store</h1>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quisquam voluptatum, quod, quia, voluptates quibusdam
+        voluptatibus.
+      </p>
+
+      <button>Shop Now</button>
+    </div>
+
+  </section>
+
+
+  <!-- ================= PRODUCTS ================= -->
+
+  <section class="products">
+
+    <h2>Our Merchandise</h2>
+
+    <div class="product-container">
+
+      <div class="product-card">
+        <img src="cloth1.webp" alt="Beige Pants">
+        <h3>Beige Pants</h3>
+        <p>$9.99</p>
+        <button>Add to Cart</button>
       </div>
 
-      <div class="app-image">
-        <img src="app.png" alt="app" />
+      <div class="product-card">
+        <img src="cloth1.webp" alt="Beige Pants">
+        <h3>Beige Pants</h3>
+        <p>$9.99</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="cloth1.webp" alt="Premium Oversized T-shirt">
+        <h3>Premium Oversized T-shirt</h3>
+        <p>$9.99</p>
+        <button>Add to Cart</button>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= REVIEWS ================= -->
+
+  <section class="reviews">
+
+    <h2>What Our Customers Say?</h2>
+
+    <div class="review-container">
+
+      <div class="review-card">
+        <h3>⭐⭐⭐⭐⭐</h3>
+        <p>"Amazing quality and really comfortable clothes."</p>
+        <h4>Rahul</h4>
+      </div>
+
+      <div class="review-card">
+        <h3>⭐⭐⭐⭐⭐</h3>
+        <p>"Loved the design. Definitely ordering again!"</p>
+        <h4>Ananya</h4>
+      </div>
+
+      <div class="review-card">
+        <h3>⭐⭐⭐⭐⭐</h3>
+        <p>"Good quality and fast delivery. Highly recommended."</p>
+        <h4>Arun</h4>
+      </div>
+
+      <div class="review-card">
+        <h3>⭐⭐⭐⭐⭐</h3>
+        <p>"Amazing experience. Will definitely shop again."</p>
+        <h4>Priya</h4>
+      </div>
+
+      <div class="review-card">
+        <h3>⭐⭐⭐⭐⭐</h3>
+        <p>"Great clothes and excellent service."</p>
+        <h4>Rohan</h4>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= DOWNLOAD APP ================= -->
+
+  <section class="download-app">
+
+    <div class="app-content">
+
+      <h2>Download Our App</h2>
+
+      <p>
+        Shop your favorite clothes anytime, anywhere.
+        Download our app for a better shopping experience.
+      </p>
+
+      <div class="app-buttons">
+
+        <a href="#" class="store-btn">
+          <img src="playstore.png" alt="Download on Google Play">
+        </a>
+
+        <a href="#" class="store-btn">
+          <img src="appstore.png" alt="Download on App Store">
+        </a>
 
       </div>
-   
 
-   </section>
+    </div>
 
-   <footer class="footer">
+    <div class="app-image">
+      <img src="app.png" alt="Cloth Store mobile app">
+    </div>
+
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
 
     <div class="footer-content">
 
+      <!-- Brand -->
       <div class="footer-brand">
         <h2>Cloth Store</h2>
-        <p>Style that fits  your life</p>
+        <p>Style that fits your life</p>
       </div>
 
+      <!-- Links -->
       <div class="footer-links">
 
         <h3>Quick Links</h3>
+
         <a href="#">Home</a>
         <a href="#">Products</a>
         <a href="#">Contact Us</a>
         <a href="#">About Us</a>
-    
+
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-contact">
+
+        <h3>Contact Us</h3>
+
+        <p>Email: clothestore@gmail.com</p>
+        <p>Phone: +91 12345 67890</p>
+
+      </div>
+
     </div>
 
-    <div class="footer-contact">
-      <h3>Contact Us</h3>
-      <p>Email:clothestore@gmail.com</p>
-      <p>Phone: +91 12345 67890</p>
-
-    </div>
-    </div>
-
+    <!-- Copyright -->
     <div class="footer-bottom">
       <p>© 2026 Cloth Store. All rights reserved.</p>
     </div>
 
-   </footer>
-    <script src="script.js"></script>
-  </body>
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
 </html>
