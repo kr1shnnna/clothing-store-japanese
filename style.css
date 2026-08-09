@@ -44,7 +44,7 @@ html{
 
 .logo a:hover{
     color:tomato;
-    
+
 }
 
 
@@ -343,6 +343,8 @@ display:none;
   color:white;
 }
 
+
+
 .footer-content{
     display:flex;
     justify-content:space-between;
@@ -367,9 +369,17 @@ display:none;
     text-decoration-color:beige;
 }
 
-.footer-brand h2{
-    font-size:30px;
-    font-weight:500;
+.footer-brand a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    font-size:24px;
+    transition: color 0.3s ease;
+
+}
+
+.footer-brand a:hover{
+    color:tomato;
 }
 
 .footer-brand p{
