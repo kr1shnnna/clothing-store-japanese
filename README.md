@@ -8,7 +8,6 @@ Sora Studio is a frontend practice project built to strengthen my understanding 
 
 ![Sora Studio Screenshot](./screenshots/sora-studio.png)
 
-> Place your project screenshot inside a folder named `screenshots` with the filename `sora-studio.png`.
 
 ## ✨ Features
 
